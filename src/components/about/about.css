@@ -1,0 +1,121 @@
+#about {
+    height: 100vh;
+}
+
+.about__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about__left, .about__right {
+    flex-basis: 45%;
+    padding: 10px;
+}
+
+.about__title {
+    font-size: 2rem;
+}
+
+.about__image {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+}
+
+.about__right {
+    margin-top: 5rem;
+}
+
+.about__intro1 {
+    font-size: 1.7rem;
+    color: var(--color-light);
+}
+
+/* ===================== MEDIA QUERIES (TABLETS) =========================== */
+@media screen and (max-width: 1024px) {
+    #about {
+        height: 100vh;
+    }
+
+    .about__image {
+        width: 500px;
+    }
+
+    .about__left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    #about {
+        height: 100%;
+    }
+
+    .about__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 80px;
+        margin-top: 0;
+    }
+
+    p, .about__intro {
+        text-align: center;
+    }
+}
+
+/* ===================== MEDIA QUERIES (PHONE) =========================== */
+@media screen and (max-width: 600px) {
+    #about {
+        height: 100%;
+    }
+
+    .about__image {
+        width: 350px;
+        margin-left: 0;
+    }
+
+    .about__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+
+    .about__intro {
+        font-size: 1.7rem;
+    }
+
+    .about__intro1 {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media screen and (max-width: 970px) {
+    .about__intro {
+        font-size: 2.1rem;
+    }
+}
+
+@media screen and (max-width: 805px) {
+    .about__intro {
+        font-size: 2rem;
+    }
+
+    .about__intro1 {
+        font-size: 1.4rem;
+    }
+}

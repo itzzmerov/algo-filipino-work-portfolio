@@ -1,0 +1,149 @@
+#projects {
+    height: 100%;
+}
+
+.projects__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.projects__card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+
+.projects__card:hover {
+    height: 450px;
+}
+
+.projects__imgBox {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.projects__card:hover .projects__imgBox {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+}
+
+.projects__card .projects__imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projects__content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.projects__content h2, .projects__content p {
+    color: black;
+    margin-top: 0%;
+}
+
+.projects__card:hover .projects__content {
+    top: 130px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projects__content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-accent);
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 0%;
+    margin-bottom: 20px;
+    color: black;
+    height: 55px;
+    border-radius: 15px;
+}
+
+.projects__content a:hover {
+    background-color: var(--color-white);
+    color: black;
+}
+
+.projects__content .live__btn {
+    background: transparent;
+    border: 2px solid var(--color-accent);
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.projects__content .live__btn:hover {
+    background: var(--color-accent);
+    border: 2px solid var(--color-accent);
+    border-radius: 15px;
+    margin-right: 10px;
+    color:black
+}
+
+/* ===================== MEDIA QUERIES (TABLETS) =========================== */
+@media screen and (max-width: 1024px) {
+    #projects {
+        height: 100%;
+    }
+
+    .projects__card:hover {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    #projects {
+        height: 100%;
+    }
+}
+
+/* ===================== MEDIA QUERIES (PHONE) =========================== */
+@media screen and (max-width: 600px) {
+    #projects {
+        height: 100%;
+    }
+
+    .projects__imgBox {
+        width: 250px;
+    }
+
+    .projects__content a {
+        width: 6rem;
+        font-size: 0.7rem;
+    }
+}
